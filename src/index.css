@@ -1,0 +1,11 @@
+/* Global helpers shared by every screen. Theme tokens live in App.css. */
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:fixed;left:12px;top:-60px;z-index:100;padding:10px 16px;border-radius:999px;background:#f2efe9;color:#0a0a0a;font:600 .85rem/1 'Manrope',system-ui,sans-serif;text-decoration:none;transition:top .2s ease}
+.skip-link:focus{top:12px}
+:focus-visible{outline:2px solid #f2efe9;outline-offset:3px}
+html[data-dialog]{overflow:hidden}
+html.no-scroll,html.no-scroll body{overflow:hidden}
+button{font-family:inherit}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important}
+}
